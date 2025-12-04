@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://d03men1di0lyn"]
+
+[ext_resource type="PackedScene" uid="uid://rrvk03322iwj" path="res://cytosine.glb" id="3_ddlet"]
+
+[node name="Node3D" type="Node3D"]
+
+[node name="cytosine" parent="." instance=ExtResource("3_ddlet")]

@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://dete5uwmqn3co"]
+
+[ext_resource type="PackedScene" uid="uid://od2c055k65hp" path="res://thymine.glb" id="4_d4f6h"]
+
+[node name="Node3D" type="Node3D"]
+
+[node name="thymine" parent="." instance=ExtResource("4_d4f6h")]

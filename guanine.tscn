@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://eq50lmybn114"]
+
+[ext_resource type="PackedScene" uid="uid://bwat3qvsgced" path="res://guanine.glb" id="1_cv8o0"]
+
+[node name="Node3D" type="Node3D"]
+
+[node name="guanine" parent="." instance=ExtResource("1_cv8o0")]

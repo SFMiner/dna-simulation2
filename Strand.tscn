@@ -1,0 +1,16 @@
+[gd_scene load_steps=5 format=3 uid="uid://c0ugh7g3yiyr6"]
+
+[ext_resource type="PackedScene" uid="uid://bwat3qvsgced" path="res://guanine.glb" id="1_ns21r"]
+[ext_resource type="PackedScene" uid="uid://debn423n0go0a" path="res://adenine.glb" id="2_1u1wa"]
+[ext_resource type="PackedScene" uid="uid://rrvk03322iwj" path="res://cytosine.glb" id="3_qgjfa"]
+[ext_resource type="PackedScene" uid="uid://od2c055k65hp" path="res://thymine.glb" id="4_0rflv"]
+
+[node name="Node3D" type="Node3D"]
+
+[node name="guanine" parent="." instance=ExtResource("1_ns21r")]
+
+[node name="adenine" parent="." instance=ExtResource("2_1u1wa")]
+
+[node name="cytosine" parent="." instance=ExtResource("3_qgjfa")]
+
+[node name="thymine" parent="." instance=ExtResource("4_0rflv")]
