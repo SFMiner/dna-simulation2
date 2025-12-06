@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://bolhv1p0bwr3o"
-path="res://.godot/imported/asseyts.glb-1a197b35476a8f5bb5ac17791269c420.scn"
+uid="uid://4onyb7c6nx5b"
+path="res://.godot/imported/phosphate.glb-a7dc41ed8a2d52eeb43c19359f30c012.scn"
 
 [deps]
 
-source_file="res://asseyts.glb"
-dest_files=["res://.godot/imported/asseyts.glb-1a197b35476a8f5bb5ac17791269c420.scn"]
+source_file="res://assets/phosphate.glb"
+dest_files=["res://.godot/imported/phosphate.glb-a7dc41ed8a2d52eeb43c19359f30c012.scn"]
 
 [params]
 

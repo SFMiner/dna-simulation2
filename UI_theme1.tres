@@ -1,0 +1,10 @@
+[gd_resource type="Theme" load_steps=2 format=3 uid="uid://rvo67evp6fq7"]
+
+[ext_resource type="StyleBox" uid="uid://bw6mcd5mtofde" path="res://stylebox1.tres" id="1_tfwu4"]
+
+[resource]
+Button/colors/font_color = Color(0, 0, 0, 1)
+Button/styles/normal = ExtResource("1_tfwu4")
+Label/colors/font_color = Color(0, 0, 0, 1)
+Label/styles/focus = ExtResource("1_tfwu4")
+Label/styles/normal = ExtResource("1_tfwu4")

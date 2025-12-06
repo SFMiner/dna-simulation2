@@ -1,9 +1,15 @@
-[gd_scene load_steps=2 format=3 uid="uid://c50qu7swf6xtj"]
+[gd_scene load_steps=3 format=3 uid="uid://c50qu7swf6xtj"]
 
-[ext_resource type="PackedScene" uid="uid://debn423n0go0a" path="res://adenine.glb" id="2_elgkj"]
+[ext_resource type="PackedScene" uid="uid://debn423n0go0a" path="res://assets/adenine.glb" id="2_elgkj"]
 
-[node name="Node3D" type="Node3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.0023083985, 0)
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_1"]
+radius = 0.21728516
+height = 1.1335449
+
+[node name="Adenine" type="StaticBody3D"]
 
 [node name="adenine" parent="." instance=ExtResource("2_elgkj")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.060018107, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(-0.29757482, 0.9547076, 4.1731596e-08, 0, -4.37114e-08, 1, 0.9547076, 0.29757482, 1.300753e-08, 0.87525594, 0.7925415, 0.51596856)
+shape = SubResource("CapsuleShape3D_1")

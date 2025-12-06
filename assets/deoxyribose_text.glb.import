@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://od2c055k65hp"
-path="res://.godot/imported/thymine.glb-e8d63d4603cbeacf01c6e4efcebdc449.scn"
+uid="uid://q8e48c7idojh"
+path="res://.godot/imported/deoxyribose_text.glb-754b3cc73220d7bc76b2ab9e2960bd7b.scn"
 
 [deps]
 
-source_file="res://thymine.glb"
-dest_files=["res://.godot/imported/thymine.glb-e8d63d4603cbeacf01c6e4efcebdc449.scn"]
+source_file="res://assets/deoxyribose_text.glb"
+dest_files=["res://.godot/imported/deoxyribose_text.glb-754b3cc73220d7bc76b2ab9e2960bd7b.scn"]
 
 [params]
 

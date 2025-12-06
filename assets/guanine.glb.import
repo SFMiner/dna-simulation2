@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://debn423n0go0a"
-path="res://.godot/imported/adenine.glb-3f138201cf15d6223731d83872bfc6f8.scn"
+uid="uid://bwat3qvsgced"
+path="res://.godot/imported/guanine.glb-4c9c6164bb73c80eda936811dde10daa.scn"
 
 [deps]
 
-source_file="res://adenine.glb"
-dest_files=["res://.godot/imported/adenine.glb-3f138201cf15d6223731d83872bfc6f8.scn"]
+source_file="res://assets/guanine.glb"
+dest_files=["res://.godot/imported/guanine.glb-4c9c6164bb73c80eda936811dde10daa.scn"]
 
 [params]
 

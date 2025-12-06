@@ -1,16 +1,22 @@
 [gd_scene load_steps=5 format=3 uid="uid://c0ugh7g3yiyr6"]
 
-[ext_resource type="PackedScene" uid="uid://bwat3qvsgced" path="res://guanine.glb" id="1_ns21r"]
-[ext_resource type="PackedScene" uid="uid://debn423n0go0a" path="res://adenine.glb" id="2_1u1wa"]
-[ext_resource type="PackedScene" uid="uid://rrvk03322iwj" path="res://cytosine.glb" id="3_qgjfa"]
-[ext_resource type="PackedScene" uid="uid://od2c055k65hp" path="res://thymine.glb" id="4_0rflv"]
+[ext_resource type="PackedScene" uid="uid://bwat3qvsgced" path="res://assets/guanine.glb" id="1_ns21r"]
+[ext_resource type="PackedScene" uid="uid://debn423n0go0a" path="res://assets/adenine.glb" id="2_1u1wa"]
+[ext_resource type="PackedScene" uid="uid://rrvk03322iwj" path="res://assets/cytosine.glb" id="3_qgjfa"]
+[ext_resource type="PackedScene" uid="uid://od2c055k65hp" path="res://assets/thymine.glb" id="4_0rflv"]
 
 [node name="Node3D" type="Node3D"]
 
-[node name="guanine" parent="." instance=ExtResource("1_ns21r")]
-
 [node name="adenine" parent="." instance=ExtResource("2_1u1wa")]
 
+[node name="guanine2" parent="adenine" instance=ExtResource("1_ns21r")]
+transform = Transform3D(0.809017, 0, 0.58778524, 0, 1, 0, -0.58778524, 0, 0.809017, -0.067442, 1.4844962, 0.8640531)
+
+[node name="guanine" parent="adenine/guanine2" instance=ExtResource("1_ns21r")]
+transform = Transform3D(0.809017, 0, -0.58778524, 0, 1, 0, 0.58778524, 0, 0.809017, -0.067, 1.484, 0.864)
+
 [node name="cytosine" parent="." instance=ExtResource("3_qgjfa")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.0029068, 0, 0)
 
 [node name="thymine" parent="." instance=ExtResource("4_0rflv")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.9503272, 0, 0)

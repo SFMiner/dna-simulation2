@@ -1,0 +1,104 @@
+[gd_scene load_steps=6 format=3 uid="uid://b27dmc7cvdw81"]
+
+[ext_resource type="Script" uid="uid://dkofix3x0te6y" path="res://dna_builder.gd" id="1_ua7vj"]
+[ext_resource type="Script" uid="uid://blbid16xyl8h7" path="res://camera_3d.gd" id="2_2kw63"]
+[ext_resource type="Script" uid="uid://dkuxi5txycl8l" path="res://UI.gd" id="3_2kw63"]
+[ext_resource type="Theme" uid="uid://rvo67evp6fq7" path="res://UI_theme1.tres" id="4_1sf3u"]
+
+[sub_resource type="Environment" id="Environment_vlf1p"]
+ambient_light_source = 2
+ambient_light_color = Color(1, 1, 1, 1)
+ambient_light_energy = 0.1
+reflected_light_source = 1
+
+[node name="DNABuilder" type="Node3D"]
+script = ExtResource("1_ua7vj")
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 6.5724473, 12.442524)
+script = ExtResource("2_2kw63")
+target_path = NodePath("../StrandContainer")
+
+[node name="StrandContainer" type="Node3D" parent="."]
+
+[node name="UI" type="CanvasLayer" parent="."]
+layer = 2
+script = ExtResource("3_2kw63")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="UI"]
+offset_left = 4.0
+offset_top = 4.0
+offset_right = 4.0
+offset_bottom = 40.0
+theme = ExtResource("4_1sf3u")
+theme_override_constants/separation = 4
+
+[node name="VBoxContainer" type="VBoxContainer" parent="UI/HBoxContainer"]
+layout_mode = 2
+theme = ExtResource("4_1sf3u")
+
+[node name="BtnAdenine" type="Button" parent="UI/HBoxContainer/VBoxContainer"]
+modulate = Color(1, 1, 0, 1)
+layout_mode = 2
+text = "Adenine"
+
+[node name="BtnGuanine" type="Button" parent="UI/HBoxContainer/VBoxContainer"]
+modulate = Color(1, 0, 0, 1)
+layout_mode = 2
+text = "Guanine"
+
+[node name="BtnCytosine" type="Button" parent="UI/HBoxContainer/VBoxContainer"]
+modulate = Color(0.19494528, 0.5542751, 1, 1)
+layout_mode = 2
+text = "Cytosine"
+
+[node name="BtnThymine" type="Button" parent="UI/HBoxContainer/VBoxContainer"]
+modulate = Color(0, 1, 0.007843138, 1)
+layout_mode = 2
+text = "Thymine"
+
+[node name="Container" type="Container" parent="UI/HBoxContainer/VBoxContainer"]
+custom_minimum_size = Vector2(0, 10)
+layout_mode = 2
+
+[node name="BtnClear" type="Button" parent="UI/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+text = "Clear"
+
+[node name="Container" type="Container" parent="UI/HBoxContainer"]
+custom_minimum_size = Vector2(10, 0)
+layout_mode = 2
+
+[node name="Instruction" type="Label" parent="UI/HBoxContainer"]
+unique_name_in_owner = true
+modulate = Color(0.79607844, 1, 1, 1)
+custom_minimum_size = Vector2(400, 0)
+layout_mode = 2
+size_flags_vertical = 0
+
+[node name="BtnReset" type="Button" parent="UI"]
+modulate = Color(1, 0, 1, 1)
+offset_left = 1079.0
+offset_top = 15.0
+offset_right = 1139.0
+offset_bottom = 46.0
+theme = ExtResource("4_1sf3u")
+text = " RESET "
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_vlf1p")
+
+[node name="DirectionalLight3D5" type="DirectionalLight3D" parent="."]
+transform = Transform3D(0.70710677, -0.35355338, 0.6123724, 0, 0.8660254, 0.5, -0.70710677, -0.35355338, 0.6123724, 0, 0, 0)
+light_energy = 0.5
+
+[node name="DirectionalLight3D6" type="DirectionalLight3D" parent="."]
+transform = Transform3D(0.70710677, -0.35355338, -0.6123724, 0, 0.8660254, -0.5, 0.70710677, 0.35355338, 0.6123724, 0, 0, 0)
+light_energy = 0.3
+
+[connection signal="pressed" from="UI/HBoxContainer/VBoxContainer/BtnAdenine" to="UI" method="_on_btn_adenine_pressed"]
+[connection signal="pressed" from="UI/HBoxContainer/VBoxContainer/BtnGuanine" to="UI" method="_on_btn_guanine_pressed"]
+[connection signal="pressed" from="UI/HBoxContainer/VBoxContainer/BtnCytosine" to="UI" method="_on_btn_cytosine_pressed"]
+[connection signal="pressed" from="UI/HBoxContainer/VBoxContainer/BtnThymine" to="UI" method="_on_btn_thymine_pressed"]
+[connection signal="pressed" from="UI/HBoxContainer/VBoxContainer/BtnClear" to="UI" method="_on_btn_clear_pressed"]
+[connection signal="pressed" from="UI/BtnReset" to="UI" method="_on_btn_reset_pressed"]

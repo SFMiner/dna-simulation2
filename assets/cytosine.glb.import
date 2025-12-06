@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://rrvk03322iwj"
-path="res://.godot/imported/cytosine.glb-c0f3f0d23e4fa241b949e1d93cfa36e7.scn"
+path="res://.godot/imported/cytosine.glb-2a3f8130fdb0dfe85d54396df8499ce5.scn"
 
 [deps]
 
-source_file="res://cytosine.glb"
-dest_files=["res://.godot/imported/cytosine.glb-c0f3f0d23e4fa241b949e1d93cfa36e7.scn"]
+source_file="res://assets/cytosine.glb"
+dest_files=["res://.godot/imported/cytosine.glb-2a3f8130fdb0dfe85d54396df8499ce5.scn"]
 
 [params]
 
