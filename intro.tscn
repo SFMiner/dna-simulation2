@@ -1,0 +1,28 @@
+[gd_scene load_steps=3 format=3 uid="uid://b4o05v6wfj618"]
+
+[ext_resource type="PackedScene" uid="uid://byb2scmto4m28" path="res://assets/deoxyribose.glb" id="1_s2ta7"]
+
+[sub_resource type="Environment" id="Environment_s2ta7"]
+ambient_light_source = 2
+ambient_light_color = Color(1, 1, 1, 1)
+ambient_light_energy = 0.1
+reflected_light_source = 1
+
+[node name="Intro" type="Node3D"]
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 5.192503)
+
+[node name="deoxyribose" parent="." instance=ExtResource("1_s2ta7")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -0.08003998, 0, -0.060028553)
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_s2ta7")
+
+[node name="DirectionalLight3D5" type="DirectionalLight3D" parent="."]
+transform = Transform3D(0.74603415, 0.33295396, -0.576693, 0, 0.8660254, 0.5000001, 0.6659078, -0.37301713, 0.6460844, 0.015244484, 2.6584244, 1.2072493)
+light_energy = 0.5
+
+[node name="DirectionalLight3D6" type="DirectionalLight3D" parent="."]
+transform = Transform3D(-0.6659077, -0.37301716, -0.6460845, 0, 0.8660254, -0.5000001, 0.74603415, -0.3329539, -0.576693, 0.015244484, 0, 1.2072493)
+light_energy = 0.3
